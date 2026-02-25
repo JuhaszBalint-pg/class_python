@@ -13,6 +13,9 @@ class Student:
 
     def __str__(self):
         return(f'Hello! I am {self.name}, {self.age} age, {self.height} tall, sex : {self.gender}, {self.score} scorecard')
+    
+    def introduce(self):
+        return f'Hello, my name is {self.name}, i am {self.age} old'
 
 Lajos = Student('Lajos', 13, 178, 'Megatron', 0)
 
@@ -25,3 +28,4 @@ print(Anna)
 Lajos.learn(100)
 
 print(Lajos.score)
+print(Lajos.introduce())
