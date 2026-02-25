@@ -1,5 +1,6 @@
 class Student:
 
+    #constructor
     def __init__(self, name, age, height, gender, score):
         self.name = name
         self.age = age
