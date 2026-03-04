@@ -1,11 +1,11 @@
 import random
 from auto import AUTO
 
-auto1 = AUTO('Toyota', 'Corolla', 2015, sebesseg_= 0)
-auto2 = AUTO('Porsche', '918', 2018, sebesseg_=0)
-auto3 = AUTO('Audi', 'E-Tron GT', 2020, sebesseg_=0)
-auto4 = AUTO('Ford', 'Focus', 1999, sebesseg_=0)
-auto5 = AUTO('Volkswagen', 'Scirocco', 2008, sebesseg_=0)
+auto1 = AUTO('Toyota', 'Corolla', 2015, sebesseg_= 0, fogyasztas_= 3.7)
+auto2 = AUTO('Porsche', '918', 2018, sebesseg_=0, fogyasztas_=5.5)
+auto3 = AUTO('Audi', 'E-Tron GT', 2020, sebesseg_=0, fogyasztas_=6.8)
+auto4 = AUTO('Ford', 'Focus', 1999, sebesseg_=0, fogyasztas_=5)
+auto5 = AUTO('Volkswagen', 'Scirocco', 2008, sebesseg_=0, fogyasztas_=3.5)
 
 autok = [auto1, auto2, auto3, auto4, auto5]
 for auto in autok:
@@ -38,3 +38,7 @@ gyartasi_evek = [auto.gyartasiev for auto in autok]
 for auto in autok:
     if auto.gyartasiev == min(gyartasi_evek):
         print(f'A legidosebb auto = {auto}')
+
+auto1.utazik(1000)
+auto1.tankol(10)
+print(auto1)
